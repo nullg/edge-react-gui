@@ -125,8 +125,6 @@ function cryptoExchangeInner (state = initialState, action: Action) {
     }
 
     case 'SELECT_TO_WALLET_CRYPTO_EXCHANGE': {
-      if (!action.data) throw new Error('Invalid action')
-      const hack: any = action.data
       return {
         ...state,
         showKYCAlert: action.data.showKYCAlert,
@@ -135,7 +133,7 @@ function cryptoExchangeInner (state = initialState, action: Action) {
         toCurrencyCode: action.data.currencyCode,
         toWalletPrimaryInfo: action.data.primaryInfo,
         toCurrencyIcon: getLogo(action.data.wallet, action.data.currencyCode),
-        toCurrencyIconDark: getLogoDark(hack.wallet, hack.currencyCode),
+        toCurrencyIconDark: getLogoDark(action.data.wallet, action.data.currencyCode),
         changeWallet: Constants.NONE,
         fromNativeAmount: '0',
         toNativeAmount: '0',

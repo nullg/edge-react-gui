@@ -1,5 +1,6 @@
 // @flow
 
+import { type GuiCurrencyInfo, type GuiWallet } from '../types.js'
 import { type CoreContextAction } from './Core/Context/action.js'
 import { type SendLogsAction } from './Logs/action.js'
 import { type DeleteWalletModalAction } from './UI/scenes/WalletList/components/DeleteModal/actions.js'
@@ -24,7 +25,9 @@ type ActionType =
   // | 'OPEN_VIEWXPUB_WALLET_MODAL'
   // | 'CLOSE_VIEWXPUB_WALLET_MODAL'
   // | 'UNLOCK_WALLET_SEED'
-  | 'SWAP_FROM_TO_CRYPTO_WALLETS'
+  // | 'SELECT_FROM_WALLET_CRYPTO_EXCHANGE'
+  // | 'SELECT_TO_WALLET_CRYPTO_EXCHANGE'
+  // | 'SWAP_FROM_TO_CRYPTO_WALLETS'
   | 'OPEN_WALLET_SELECTOR_MODAL'
   | 'UPDATE_SHIFT_TRANSACTION_FEE'
   | 'INVALIDATE_SHIFT_TRANSACTION'
@@ -252,7 +255,6 @@ type ActionType =
   | 'UI/SCENES/TRANSACTION_LIST/TOGGLE_UPDATING_BALANCE'
   | 'SET_TOKEN_SETTINGS'
   | 'ON_KYC_TOKEN_SET'
-// | 'SELECT_TO_WALLET_CRYPTO_EXCHANGE'
 
 type LegacyAction = {
   type: ActionType,
@@ -270,13 +272,16 @@ export type Action =
   | CoreContextAction
   | SendLogsAction
   | {
-      type: 'SELECT_TO_WALLET_CRYPTO_EXCHANGE',
-      data?: any
+      type: 'SELECT_FROM_WALLET_CRYPTO_EXCHANGE' | 'SELECT_TO_WALLET_CRYPTO_EXCHANGE',
+      data: {
+        wallet: GuiWallet,
+        currencyCode: string,
+        primaryInfo: GuiCurrencyInfo,
+        requireKYCPlugins: Array<string>,
+        showKYCAlert: boolean
+      }
     }
-  | {
-      type: 'SELECT_FROM_WALLET_CRYPTO_EXCHANGE',
-      data?: any
-    }
+  | { type: 'SWAP_FROM_TO_CRYPTO_WALLETS' }
   | { type: 'UI/WALLETS/CREATE_WALLET_START' }
   | { type: 'UI/WALLETS/CREATE_WALLET_SUCCESS' }
   | { type: 'UI/WALLETS/CREATE_WALLET_FAILURE' }
