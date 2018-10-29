@@ -95,6 +95,7 @@ import SendConfirmationOptions from './UI/scenes/SendConfirmation/SendConfirmati
 import CurrencySettings from './UI/scenes/Settings/CurrencySettingsConnector'
 import CurrencySettingsTitleConnector from './UI/scenes/Settings/CurrencySettingsTitleConnector.js'
 import DefaultFiatSettingConnector from './UI/scenes/Settings/DefaultFiatSettingConnector'
+import { ExchangeSettingsConnector } from './UI/scenes/Settings/ExchangeSettingsConnector.js'
 import SettingsOverview from './UI/scenes/Settings/SettingsOverviewConnector'
 import SpendingLimitsConnector from './UI/scenes/SpendingLimits/SpendingLimitsConnector.js'
 import { TermsOfServiceComponent } from './UI/scenes/TermsOfService/TermsOfService.ui.js'
@@ -166,6 +167,7 @@ const MANAGE_TOKENS = s.strings.title_manage_tokens
 const ADD_TOKEN = s.strings.title_add_token
 const EDIT_TOKEN = s.strings.title_edit_token
 const SETTINGS = s.strings.title_settings
+const EXCHANGE_SETTINGS = s.strings.settings_exchange_settings
 const CHANGE_PASSWORD = s.strings.title_change_password
 const CHANGE_PIN = s.strings.title_change_pin
 const SPENDING_LIMITS = s.strings.spending_limits
@@ -585,6 +587,14 @@ export default class Main extends Component<Props, State> {
                         navTransparent={true}
                         component={SpendingLimitsConnector}
                         renderTitle={this.renderTitle(SPENDING_LIMITS)}
+                        renderLeftButton={this.renderBackButton()}
+                        renderRightButton={this.renderEmptyButton()}
+                      />
+                      <Scene
+                        key={Constants.EXCHANGE_SETTINGS}
+                        navTransparent={true}
+                        component={ExchangeSettingsConnector}
+                        renderTitle={this.renderTitle(EXCHANGE_SETTINGS)}
                         renderLeftButton={this.renderBackButton()}
                         renderRightButton={this.renderEmptyButton()}
                       />
