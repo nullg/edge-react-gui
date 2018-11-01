@@ -2,6 +2,7 @@
 
 import { type Reducer, combineReducers } from 'redux'
 
+import { type EditTokenState, editToken } from '../../../reducers/EditTokenReducer.js'
 import { type RequestTypeState, requestType } from '../../../reducers/RequestTypeReducer.js'
 import type { Action } from '../../ReduxTypes.js'
 import { ABAlert, type ABAlertState } from '../components/ABAlert/reducer.js'
@@ -18,7 +19,6 @@ import { type WalletListModalState, walletListModal } from '../components/Wallet
 import { type DimensionsState, dimensions } from '../dimensions/reducer.js'
 import { type ChangeMiningFeeState, changeMiningFee } from './ChangeMiningFee/reducer.js'
 import { type CreateWalletState, createWallet } from './CreateWallet/reducer.js'
-import { type EditTokenState, editToken } from './EditToken/reducer.js'
 import { type RequestSceneState, request } from './Request/reducer.js'
 import { type ScanState, scan } from './Scan/reducer.js'
 import { type UniqueIdentifierModalState, uniqueIdentifierModal } from './SendConfirmation/components/UniqueIdentifierModal/UniqueIdentifierModalReducer.js'

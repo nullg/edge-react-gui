@@ -2,7 +2,7 @@
 
 import { type Reducer, combineReducers } from 'redux'
 
-import type { Action } from '../../../ReduxTypes.js'
+import type { Action } from '../modules/ReduxTypes.js'
 
 export type EditTokenState = {
   +deleteTokenModalVisible: boolean,

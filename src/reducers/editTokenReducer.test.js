@@ -2,7 +2,7 @@
 
 /* globals test expect */
 
-import { editToken as editTokenReducer } from './reducer.js'
+import { editToken as editTokenReducer } from './EditTokenReducer.js'
 
 test('initialState', () => {
   const expected = {

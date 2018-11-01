@@ -2,11 +2,11 @@
 
 import { connect } from 'react-redux'
 
-import type { Dispatch, State } from '../../../ReduxTypes'
-import * as WALLET_ACTIONS from '../../Wallets/action'
-import * as EDIT_TOKEN_ACTIONS from './action.js'
-import EditToken from './EditToken.ui'
-import type { EditTokenDispatchProps, EditTokenStateProps } from './EditToken.ui'
+import * as EDIT_TOKEN_ACTIONS from '../actions/EditTokenActions.js'
+import EditToken from '../components/scene/EditTokenScene'
+import type { EditTokenDispatchProps, EditTokenStateProps } from '../components/scene/EditTokenScene'
+import type { Dispatch, State } from '../modules/ReduxTypes'
+import * as WALLET_ACTIONS from '../modules/UI/Wallets/action'
 
 const mapStateToProps = (state: State): EditTokenStateProps => ({
   customTokens: state.ui.settings.customTokens,

@@ -3,9 +3,9 @@
 import React, { Component } from 'react'
 import { ActivityIndicator, View } from 'react-native'
 
-import s from '../../../../../locales/strings.js'
-import { PrimaryButton, SecondaryButton } from '../../../components/Buttons'
-import styles from '../style.js'
+import s from '../../locales/strings.js'
+import { PrimaryButton, SecondaryButton } from '../../modules/UI/components/Buttons/index'
+import styles from '../../styles/EditTokenStyle.js'
 
 export type DeleteTokenButtonsProps = {
   onPressCancel: () => void,
