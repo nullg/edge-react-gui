@@ -2,11 +2,11 @@
 
 import { connect } from 'react-redux'
 
-import type { Dispatch, State } from '../../../ReduxTypes'
-import { getWallet } from '../../selectors'
-import * as ADD_TOKEN_ACTIONS from './action.js'
-import { AddToken } from './AddToken.ui'
-import type { AddTokenDispatchProps, AddTokenOwnProps, AddTokenStateProps } from './AddToken.ui'
+import * as ADD_TOKEN_ACTIONS from '../../actions/AddTokenActions.js'
+import { AddToken } from '../../components/scene/AddTokeScene.js'
+import type { AddTokenDispatchProps, AddTokenOwnProps, AddTokenStateProps } from '../../components/scene/AddTokeScene.js'
+import type { Dispatch, State } from '../../modules/ReduxTypes.js'
+import { getWallet } from '../../modules/UI/selectors.js'
 
 const mapStateToProps = (state: State, ownProps: AddTokenOwnProps): AddTokenStateProps => ({
   addTokenPending: state.ui.wallets.addTokenPending,

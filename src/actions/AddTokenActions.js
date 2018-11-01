@@ -2,15 +2,15 @@
 
 import { Actions } from 'react-native-router-flux'
 
-import type { CustomTokenInfo } from '../../../../types.js'
-import * as SETTINGS_API from '../../../Core/Account/settings.js'
-import * as CORE_SELECTORS from '../../../Core/selectors.js'
-import * as WALLET_API from '../../../Core/Wallets/api.js'
-import type { Dispatch, GetState, State } from '../../../ReduxTypes'
-import * as UTILS from '../../../utils.js'
-import { displayErrorAlert } from '../../components/ErrorAlert/actions'
-import * as UI_WALLET_SELECTORS from '../../selectors.js'
-import * as WALLET_ACTIONS from '../../Wallets/action.js'
+import * as SETTINGS_API from '../modules/Core/Account/settings'
+import * as CORE_SELECTORS from '../modules/Core/selectors.js'
+import * as WALLET_API from '../modules/Core/Wallets/api.js'
+import type { Dispatch, GetState, State } from '../modules/ReduxTypes.js'
+import { displayErrorAlert } from '../modules/UI/components/ErrorAlert/actions'
+import * as UI_WALLET_SELECTORS from '../modules/UI/selectors.js'
+import * as WALLET_ACTIONS from '../modules/UI/Wallets/action.js'
+import * as UTILS from '../modules/utils.js'
+import type { CustomTokenInfo } from '../types.js'
 
 export const addTokenStart = () => ({
   type: 'ADD_TOKEN_START'
