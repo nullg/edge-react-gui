@@ -1,5 +1,5 @@
 // @flow
 
-import SettingsOverview from './SettingsOverviewConnector'
+import SettingsOverview from '../../../../connectors/SettingsOverviewConnector'
 
 export { SettingsOverview }

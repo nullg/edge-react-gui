@@ -10,7 +10,7 @@ import { PrimaryButton } from '../../modules/UI/components/Buttons/index'
 import { PasswordInput } from '../../modules/UI/components/Modals/components/PasswordInput.ui.js'
 import { TextInput } from '../../modules/UI/components/Modals/components/TextInput.ui.js'
 import SafeAreaView from '../../modules/UI/components/SafeAreaView/SafeAreaView.ui.js'
-import type { SpendingLimits as SpendingLimitsType } from '../../modules/UI/Settings/spendingLimits/SpendingLimitsReducer.js'
+import type { SpendingLimits as SpendingLimitsType } from '../../reducers/SpendingLimitsReducer.js'
 import styles from '../../styles/scenes/SpendingLimitsStyle.js'
 
 const ENTER_YOUR_PASSWORD = s.strings.enter_your_password

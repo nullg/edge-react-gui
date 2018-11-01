@@ -1,5 +1,5 @@
 // @flow
 
-import SendConfirmation from './SendConfirmationConnector'
+import SendConfirmation from '../../../../connectors/SendConfirmationConnector'
 
 export default SendConfirmation

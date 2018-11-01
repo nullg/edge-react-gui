@@ -14,7 +14,7 @@ import SafeAreaView from '../../modules/UI/components/SafeAreaView/index'
 import Slider from '../../modules/UI/components/Slider/index'
 import { CryptoExchangeQuoteSceneStyles as styles } from '../../styles/indexStyles'
 import type { GuiWallet } from '../../types'
-import { CircleTimer } from '../CircleTimer'
+import { CircleTimer } from '../common/CircleTimer'
 
 export type QuoteObject = {
   quote: EdgeSwapQuote,

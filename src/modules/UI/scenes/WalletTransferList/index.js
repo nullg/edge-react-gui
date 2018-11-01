@@ -1,5 +1,5 @@
 // @flow
 
-import WalletTransferList from './WalletTransferListConnector'
+import WalletTransferList from '../../../../connectors/WalletTransferListConnector'
 
 export default WalletTransferList

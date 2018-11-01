@@ -5,13 +5,13 @@ import React, { Component } from 'react'
 import { View } from 'react-native'
 import slowlog from 'react-native-slowlog'
 
+import CustomFees from '../../connectors/CustomFeesConnector.js'
 import * as FEE from '../../constants/FeeConstants'
 import s from '../../locales/strings.js'
 import Gradient from '../../modules/UI/components/Gradient/Gradient.ui'
 import SafeAreaView from '../../modules/UI/components/SafeAreaView/index'
-import CustomFees from '../../modules/UI/scenes/ChangeMiningFee/components/CustomFees/CustomFeesConnector.js'
-import RadioButton from '../../modules/UI/scenes/ChangeMiningFee/components/RadioButton.ui'
 import styles from '../../styles/scenes/ChangeMiningFeeStyle'
+import RadioButton from '../common/ChangeMiningFeeRadioButton'
 
 const HIGH_FEE_TEXT = s.strings.mining_fee_high_label_choice
 const STANDARD_FEE_TEXT = s.strings.mining_fee_standard_label_choice

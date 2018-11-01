@@ -8,9 +8,9 @@ import * as WALLET_API from '../modules/Core/Wallets/api.js'
 import type { Dispatch, GetState, State } from '../modules/ReduxTypes.js'
 import { displayErrorAlert } from '../modules/UI/components/ErrorAlert/actions'
 import * as UI_WALLET_SELECTORS from '../modules/UI/selectors.js'
-import * as WALLET_ACTIONS from '../modules/UI/Wallets/action.js'
 import * as UTILS from '../modules/utils.js'
 import type { CustomTokenInfo } from '../types.js'
+import * as WALLET_ACTIONS from './WalletActions.js'
 
 export const addTokenStart = () => ({
   type: 'ADD_TOKEN_START'

@@ -13,7 +13,7 @@ import SafeAreaView from '../../modules/UI/components/SafeAreaView/index'
 import { MaterialInputOnWhite } from '../../styles/components/FormFieldStyles.js'
 import styles from '../../styles/scenes/CreateWalletStyle.js'
 import type { GuiFiatType, GuiWalletType } from '../../types.js'
-import { FormField } from '../FormField.js'
+import { FormField } from '../common/FormField.js'
 
 export type CreateWalletNameOwnProps = {
   selectedFiat: GuiFiatType,

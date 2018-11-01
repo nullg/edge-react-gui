@@ -12,8 +12,8 @@ import T from '../../modules/UI/components/FormattedText/index'
 import Gradient from '../../modules/UI/components/Gradient/Gradient.ui.js'
 import { Icon } from '../../modules/UI/components/Icon/Icon.ui'
 import SafeAreaView from '../../modules/UI/components/SafeAreaView/index'
-import OtpHeroComponent from '../../modules/UI/scenes/Otp/OtpHeroComponent.js'
 import { OtpSettingsScreenStyles } from '../../styles/indexStyles.js'
+import OtpHeroComponent from '../common/OtpHeroComponent.js'
 import { ExpandableBoxComponent, StaticModalComponent } from '../indexComponents.js'
 
 type OtpSettingsSceneProps = {

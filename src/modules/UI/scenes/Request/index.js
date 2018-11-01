@@ -1,5 +1,5 @@
 // @flow
 
-import Request from './RequestConnector'
+import Request from '../../../../connectors/RequestConnector'
 
 export default Request

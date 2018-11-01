@@ -14,7 +14,7 @@ import SafeAreaView from '../../modules/UI/components/SafeAreaView/index'
 import { decimalPlacesToDenomination } from '../../modules/utils.js'
 import styles from '../../styles/scenes/AddTokenStyles.js'
 import type { CustomTokenInfo, GuiWallet } from '../../types.js'
-import { FormField } from '../FormField.js'
+import { FormField } from '../common/FormField.js'
 
 export type AddTokenOwnProps = {
   walletId: string,

@@ -3,9 +3,9 @@
 import type { Dispatch as ReduxDispatch, Store as ReduxStore } from 'redux'
 
 import type { PermissionsState } from '../reducers/permissions/permissionsReducer.js'
+import type { RootState as State } from '../reducers/scenes/MainReducer.js'
 import type { Action } from './Action.js'
 import type { Permission, PermissionStatus } from './PermissionsManager.js'
-import type { RootState as State } from './reducer.js'
 
 export type CurrencyCode = string
 export type Id = string

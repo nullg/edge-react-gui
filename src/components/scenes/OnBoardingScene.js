@@ -7,9 +7,9 @@ import { EDGE } from '../../constants/indexConstants'
 import s from '../../locales/strings.js'
 import { PrimaryButton, TextButton } from '../../modules/UI/components/Buttons/index'
 import { PagingDotsComponent } from '../../modules/UI/components/PagingDots/PagingDotsComponent.js'
-import { OnBoardingSlideComponent } from '../../modules/UI/scenes/OnBoarding/OnBoardingSlideComponent.js'
 import { OnBoardingSceneStyles } from '../../styles/indexStyles.js'
 import { PLATFORM } from '../../theme/variables/platform'
+import { OnBoardingSlideComponent } from '../common/OnBoardingSlideComponent.js'
 
 /* import Modal from 'react-native-modal' */
 // import Swiper from 'react-native-swiper'

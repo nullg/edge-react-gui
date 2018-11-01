@@ -7,13 +7,13 @@ import s from '../../locales/strings.js'
 import T from '../../modules/UI/components/FormattedText/index'
 import Gradient from '../../modules/UI/components/Gradient/Gradient.ui'
 import SafeAreaView from '../../modules/UI/components/SafeAreaView/index'
-import RadioRows from '../../modules/UI/scenes/Settings/components/RadioRows.ui.js'
-import Row from '../../modules/UI/scenes/Settings/components/Row.ui.js'
-import ModalRow from '../../modules/UI/scenes/Settings/components/RowModal.ui.js'
-import SwitchRow from '../../modules/UI/scenes/Settings/components/RowSwitch.ui.js'
-import { SetCustomNodesModal } from '../../modules/UI/scenes/Settings/components/SetCustomNodesModal.ui.js'
 import styles from '../../styles/scenes/SettingsStyle'
 import type { GuiDenomination } from '../../types'
+import RadioRows from '../common/RadioRows.js'
+import ModalRow from '../common/RowModal.js'
+import SwitchRow from '../common/RowSwitch.js'
+import Row from '../common/SettingsRow.js'
+import { SetCustomNodesModal } from '../modals/SetCustomNodesModal.ui.js'
 
 const SETTINGS_DENOMINATION_TEXT = s.strings.settings_denominations_title
 const CUSTOM_NODES_TEXT = s.strings.settings_custom_nodes_title

@@ -18,7 +18,7 @@ import * as UTILS from '../../modules/utils'
 import styles from '../../styles/EditTokenStyle.js'
 import type { CustomTokenInfo } from '../../types.js'
 import DeleteTokenButtons from '../common/DeleteTokenButtons.js'
-import { FormField } from '../FormField.js'
+import { FormField } from '../common/FormField.js'
 
 export type EditTokenDispatchProps = {
   showDeleteTokenModal: () => void,

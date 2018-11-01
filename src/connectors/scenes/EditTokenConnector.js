@@ -3,10 +3,10 @@
 import { connect } from 'react-redux'
 
 import * as EDIT_TOKEN_ACTIONS from '../../actions/EditTokenActions.js'
+import * as WALLET_ACTIONS from '../../actions/WalletActions'
 import EditToken from '../../components/scenes/EditTokenScene'
 import type { EditTokenDispatchProps, EditTokenStateProps } from '../../components/scenes/EditTokenScene'
 import type { Dispatch, State } from '../../modules/ReduxTypes'
-import * as WALLET_ACTIONS from '../../modules/UI/Wallets/action'
 
 const mapStateToProps = (state: State): EditTokenStateProps => ({
   customTokens: state.ui.settings.customTokens,

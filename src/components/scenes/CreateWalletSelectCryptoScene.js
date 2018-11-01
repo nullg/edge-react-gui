@@ -13,7 +13,7 @@ import SearchResults from '../../modules/UI/components/SearchResults/index'
 import * as UTILS from '../../modules/utils'
 import styles, { styles as stylesRaw } from '../../styles/scenes/CreateWalletStyle.js'
 import type { DeviceDimensions, FlatListItem, GuiWalletType } from '../../types'
-import { FormField } from '../FormField.js'
+import { FormField } from '../common/FormField.js'
 
 export type CreateWalletSelectCryptoOwnProps = {
   dimensions: DeviceDimensions,
