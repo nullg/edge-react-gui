@@ -6,11 +6,11 @@ import React, { Component } from 'react'
 import { TouchableHighlight, TouchableWithoutFeedback, View } from 'react-native'
 import Icon from 'react-native-vector-icons/SimpleLineIcons'
 
-import type { CustomTokenInfo } from '../../../../types.js'
-import * as UTILS from '../../../utils.js'
-import CheckBox from '../../components/CheckBox'
-import Text from '../../components/FormattedText'
-import styles, { styles as rawStyles } from './style.js'
+import CheckBox from '../../modules/UI/components/CheckBox/index'
+import Text from '../../modules/UI/components/FormattedText/index'
+import * as UTILS from '../../modules/utils.js'
+import styles, { styles as rawStyles } from '../../styles/scenes/ManageTokensStyle.js'
+import type { CustomTokenInfo } from '../../types.js'
 
 // import THEME from '../../../../theme/variables/airbitz'
 

@@ -3,8 +3,8 @@
 import { connect } from 'react-redux'
 
 import * as ADD_TOKEN_ACTIONS from '../../actions/AddTokenActions.js'
-import { AddToken } from '../../components/scene/AddTokeScene.js'
-import type { AddTokenDispatchProps, AddTokenOwnProps, AddTokenStateProps } from '../../components/scene/AddTokeScene.js'
+import { AddToken } from '../../components/scenes/AddTokeScene.js'
+import type { AddTokenDispatchProps, AddTokenOwnProps, AddTokenStateProps } from '../../components/scenes/AddTokeScene.js'
 import type { Dispatch, State } from '../../modules/ReduxTypes.js'
 import { getWallet } from '../../modules/UI/selectors.js'
 
