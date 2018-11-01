@@ -3,6 +3,8 @@
 import { errorNames } from 'edge-core-js'
 import { connect } from 'react-redux'
 
+import { SendConfirmation } from '../../../../components/scenes/SendConfirmationScene'
+import type { SendConfirmationDispatchProps, SendConfirmationStateProps } from '../../../../components/scenes/SendConfirmationScene'
 import type { Dispatch, State } from '../../../ReduxTypes'
 import { convertNativeToExchange } from '../../../utils'
 import { getExchangeDenomination, getExchangeRate, getSelectedCurrencyCode, getSelectedWallet } from '../../selectors.js'
@@ -10,8 +12,6 @@ import { getDisplayDenomination, getExchangeDenomination as settingsGetExchangeD
 import { newPin, reset, signBroadcastAndSave, uniqueIdentifierUpdated, updateAmount, updateSpendPending } from './action.js'
 import { activated as uniqueIdentifierModalActivated } from './components/UniqueIdentifierModal/UniqueIdentifierModalActions.js'
 import { getError, getForceUpdateGuiCounter, getKeyboardIsVisible, getPending, getPublicAddress, getTransaction } from './selectors'
-import { SendConfirmation } from './SendConfirmation.ui'
-import type { SendConfirmationDispatchProps, SendConfirmationStateProps } from './SendConfirmation.ui'
 
 const mapStateToProps = (state: State): SendConfirmationStateProps => {
   const sceneState = state.ui.scenes.sendConfirmation

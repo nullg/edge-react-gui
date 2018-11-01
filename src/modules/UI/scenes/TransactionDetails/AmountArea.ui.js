@@ -8,11 +8,11 @@ import slowlog from 'react-native-slowlog'
 import { sprintf } from 'sprintf-js'
 
 import s from '../../../../locales/strings.js'
+import styles from '../../../../styles/scenes/TransactionDetailsStyle'
 import THEME from '../../../../theme/variables/airbitz'
 import * as UTILS from '../../../utils'
 import { PrimaryButton } from '../../components/Buttons'
 import FormattedText from '../../components/FormattedText'
-import styles from './style'
 
 const categories = ['income', 'expense', 'exchange', 'transfer']
 

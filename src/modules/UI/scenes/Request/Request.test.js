@@ -4,7 +4,7 @@
 import React from 'react'
 import ShallowRenderer from 'react-test-renderer/shallow'
 
-import { Request } from './Request.ui.js'
+import { Request } from '../../../../components/scenes/RequestScene.js'
 
 describe('Request', () => {
   it('should render with loading props', () => {

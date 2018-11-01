@@ -9,10 +9,10 @@ import { sprintf } from 'sprintf-js'
 
 import * as Constants from '../../../../../constants/indexConstants'
 import s from '../../../../../locales/strings.js'
+import styles from '../../../../../styles/scenes/ScaneStyle'
 import { colors } from '../../../../../theme/variables/airbitz.js'
 import * as WALLET_API from '../../../../Core/Wallets/api.js'
 import StylizedModal from '../../../components/Modal/Modal.ui'
-import styles from '../style'
 import { AddressInput } from './AddressInput.js'
 import { AddressInputButtons } from './AddressInputButtons.js'
 

@@ -4,9 +4,9 @@ import React, { Component } from 'react'
 import { ActivityIndicator, Text, View } from 'react-native'
 
 import s from '../../../../../../locales/strings.js'
+import styles from '../../../../../../styles/scenes/ScaneStyle.js'
 import { Icon } from '../../../../components/Icon/Icon.ui'
 import { NonInteractiveModal } from '../../../../components/Modals'
-import styles from '../../style.js'
 
 export type Props = {
   error: Error | null,

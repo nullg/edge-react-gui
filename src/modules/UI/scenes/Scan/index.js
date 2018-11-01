@@ -1,5 +1,5 @@
 // @flow
 
-import Scan from './Scan.ui.js'
+import Scan from '../../../../components/scenes/ScanScene.js'
 
 export default Scan

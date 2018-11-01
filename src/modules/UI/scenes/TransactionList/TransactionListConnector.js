@@ -4,6 +4,8 @@ import type { EdgeCurrencyInfo, EdgeCurrencyWallet } from 'edge-core-js'
 import _ from 'lodash'
 import { connect } from 'react-redux'
 
+import type { DispatchProps, StateProps } from '../../../../components/scenes/TransactionListScene'
+import { TransactionList } from '../../../../components/scenes/TransactionListScene'
 import { getWallet } from '../../../Core/selectors.js'
 import type { Dispatch, State } from '../../../ReduxTypes'
 import { convertNativeToExchange, getFiatSymbol } from '../../../utils'
@@ -12,8 +14,6 @@ import { getCustomTokens, getDisplayDenomination, getDisplayDenominationKey, get
 import { selectWalletFromModal } from '../../Wallets/action.js'
 import { toggleAccountBalanceVisibility } from '../WalletList/action.js'
 import { fetchMoreTransactions } from './action'
-import type { DispatchProps, StateProps } from './TransactionList.ui'
-import { TransactionList } from './TransactionList.ui'
 
 const mapStateToProps = (state: State) => {
   const selectedWalletId = getSelectedWalletId(state)

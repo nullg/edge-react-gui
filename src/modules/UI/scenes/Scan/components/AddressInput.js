@@ -6,9 +6,9 @@ import slowlog from 'react-native-slowlog'
 
 import { FormField } from '../../../../../components/FormField.js'
 import s from '../../../../../locales/strings.js'
+import styles from '../../../../../styles/scenes/ScaneStyle.js'
 import { TertiaryButton } from '../../../components/Buttons'
 import { InteractiveModal } from '../../../components/Modals'
-import styles from '../style.js'
 
 export type Props = {
   uri: string,

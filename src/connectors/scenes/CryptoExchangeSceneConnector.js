@@ -5,13 +5,10 @@ import { connect } from 'react-redux'
 
 import type { SetNativeAmountInfo } from '../../actions/CryptoExchangeActions'
 import { getQuoteForTransaction, getShapeShiftTokens, selectWalletForExchange } from '../../actions/CryptoExchangeActions.js'
+import { CryptoExchangeScene } from '../../components/scenes/CryptoExchangeScene'
+import type { CryptoExchangeSceneComponentDispatchProps, CryptoExchangeSceneComponentStateProps } from '../../components/scenes/CryptoExchangeScene'
 import s from '../../locales/strings.js'
 import type { Dispatch, State } from '../../modules/ReduxTypes'
-import { CryptoExchangeSceneComponent } from '../../modules/UI/scenes/CryptoExchange/CryptoExchangeSceneComponent'
-import type {
-  CryptoExchangeSceneComponentDispatchProps,
-  CryptoExchangeSceneComponentStateProps
-} from '../../modules/UI/scenes/CryptoExchange/CryptoExchangeSceneComponent'
 import { getExchangeRate } from '../../modules/UI/selectors.js'
 import { emptyCurrencyInfo, emptyGuiWallet } from '../../types.js'
 import type { GuiCurrencyInfo } from '../../types.js'
@@ -100,6 +97,6 @@ export const mapDispatchToProps = (dispatch: Dispatch): CryptoExchangeSceneCompo
 const CryptoExchangeSceneConnector = connect(
   mapStateToProps,
   mapDispatchToProps
-)(CryptoExchangeSceneComponent)
+)(CryptoExchangeScene)
 
 export { CryptoExchangeSceneConnector }

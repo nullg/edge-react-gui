@@ -3,8 +3,8 @@
 import React, { Component } from 'react'
 import { TouchableHighlight, View } from 'react-native'
 
+import styles, { styles as styleRaw } from '../../../../../styles/scenes/SettingsStyle'
 import T from '../../../components/FormattedText'
-import styles, { styles as styleRaw } from '../style'
 
 type Props = {
   leftText: string,

@@ -4,8 +4,8 @@ import { Image, View } from 'react-native'
 import { sprintf } from 'sprintf-js'
 
 import s from '../../../../locales/strings.js'
+import styles from '../../../../styles/scenes/SettingsStyle.js'
 import T from '../../components/FormattedText'
-import styles from './style.js'
 
 export type CurrencySettingsTitleOwnProps = {
   pluginName: string

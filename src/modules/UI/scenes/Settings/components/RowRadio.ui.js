@@ -5,8 +5,8 @@ import type { Node } from 'react'
 import { TouchableOpacity, View } from 'react-native'
 import IonIcon from 'react-native-vector-icons/Ionicons'
 
+import styles, { styles as styleRaw } from '../../../../../styles/scenes/SettingsStyle'
 import { border as b } from '../../../../utils'
-import styles, { styles as styleRaw } from '../style'
 
 export type Props = {
   key: string,

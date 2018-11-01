@@ -5,9 +5,9 @@ import { Image, TouchableHighlight, View } from 'react-native'
 
 import ContactImage from '../../../../assets/images/contact.png'
 import { scale } from '../../../../lib/scaling.js'
+import styles from '../../../../styles/scenes/TransactionDetailsStyle'
 import FormattedText from '../../components/FormattedText'
 import SearchResults from '../../components/SearchResults'
-import styles from './style'
 
 class ContactSearchResults extends Component {
   render () {

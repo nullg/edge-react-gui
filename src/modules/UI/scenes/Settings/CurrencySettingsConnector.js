@@ -2,12 +2,12 @@
 
 import { connect } from 'react-redux'
 
+import CurrencySettings from '../../../../components/scenes/CurrencySettingsScene'
 import { CURRENCY_PLUGIN_NAMES } from '../../../../constants/indexConstants.js'
 import { getAccount } from '../../../Core/selectors.js'
 import type { Dispatch, State } from '../../../ReduxTypes.js'
 import * as SETTINGS_SELECTORS from '../../Settings/selectors'
 import { disableCustomNodes, enableCustomNodes, saveCustomNodesList, setDenominationKeyRequest } from './action'
-import CurrencySettings from './CurrencySettings.ui'
 
 const mapStateToProps = (state: State, ownProps) => {
   const account = getAccount(state)

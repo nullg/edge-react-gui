@@ -7,8 +7,8 @@ import Menu, { MenuOption, MenuOptions, MenuTrigger } from 'react-native-popup-m
 
 import s from '../../../../locales/strings.js'
 import { MenuDropDownStyle } from '../../../../styles/indexStyles'
+import styles from '../../../../styles/scenes/SendConfirmationStyle'
 import Text from '../../components/FormattedText'
-import styles from './styles'
 
 const CHANGE_MINING_FEE_TEXT = s.strings.title_change_mining_fee
 const SEND_MAX_TEXT = s.strings.send_confirmation_max_button_title

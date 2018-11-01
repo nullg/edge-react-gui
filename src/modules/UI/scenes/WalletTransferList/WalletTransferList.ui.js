@@ -6,7 +6,7 @@ import { Actions } from 'react-native-router-flux'
 import FAIcon from 'react-native-vector-icons/FontAwesome'
 
 import * as Constants from '../../../../constants/indexConstants'
-import styles from './style'
+import styles from '../../../../styles/scenes/WalletListModalStyle'
 
 export type Props = {
   toggleWalletListModal: () => void,

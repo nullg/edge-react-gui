@@ -3,12 +3,12 @@
 import { connect } from 'react-redux'
 
 import { disableOtp, keepOtp } from '../../../../actions/OtpActions'
+import WalletList from '../../../../components/scenes/WalletListScene'
 import type { Dispatch, State } from '../../../ReduxTypes'
 import * as UI_SELECTORS from '../../selectors.js'
 import * as SETTINGS_SELECTORS from '../../Settings/selectors'
 import { toggleAccountBalanceVisibility, toggleWalletFiatBalanceVisibility, updateActiveWalletsOrder, updateArchivedWalletsOrder } from './action'
 import { walletRowOption } from './components/WalletOptions/action.js'
-import WalletList from './WalletList.ui'
 
 const mapStateToProps = (state: State) => {
   const coreWallets = state.core.wallets.byId

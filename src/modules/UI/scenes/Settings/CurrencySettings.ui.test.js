@@ -4,7 +4,7 @@
 import React from 'react'
 import ShallowRenderer from 'react-test-renderer/shallow'
 
-import CurrencySettings from './CurrencySettings.ui'
+import CurrencySettings from '../../../../components/scenes/CurrencySettingsScene'
 
 describe('CurrencySettings', () => {
   it('should render', () => {

@@ -4,7 +4,7 @@
 import React from 'react'
 import ShallowRenderer from 'react-test-renderer/shallow'
 
-import ChangeMiningFees from './ChangeMiningFee.ui.js'
+import ChangeMiningFees from '../../../../components/scenes/ChangeMiningFeeScene.js'
 
 describe('Change Mining Fees', () => {
   it('should render with standard props', () => {

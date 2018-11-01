@@ -6,9 +6,9 @@ import { TouchableHighlight, View } from 'react-native'
 import { Actions } from 'react-native-router-flux'
 
 import { intl } from '../../../../../../locales/intl'
+import styles, { styles as styleRaw } from '../../../../../../styles/scenes/WalletListStyle'
 import * as UTILS from '../../../../../utils'
 import T from '../../../../components/FormattedText'
-import styles, { styles as styleRaw } from '../../style'
 
 type OwnProps = {
   parentId: string,

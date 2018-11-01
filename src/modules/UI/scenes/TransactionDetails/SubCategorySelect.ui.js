@@ -3,12 +3,12 @@
 import React, { Component } from 'react'
 import { TouchableHighlight, View } from 'react-native'
 
+import styles from '../../../../styles/scenes/TransactionDetailsStyle'
 import { colors } from '../../../../theme/variables/airbitz'
 import { PLATFORM } from '../../../../theme/variables/platform.js'
 import type { SubcategorySearchResultData } from '../../../../types.js'
 import FormattedText from '../../components/FormattedText'
 import SearchResults from '../../components/SearchResults'
-import styles from './style'
 
 const categories = ['income', 'expense', 'exchange', 'transfer']
 

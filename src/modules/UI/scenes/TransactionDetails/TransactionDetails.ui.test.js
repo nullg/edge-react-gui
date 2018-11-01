@@ -4,7 +4,7 @@
 import React from 'react'
 import ShallowRenderer from 'react-test-renderer/shallow'
 
-import { TransactionDetails } from './TransactionDetails.ui.js'
+import { TransactionDetails } from '../../../../components/scenes/TransactionDetailsScene.js'
 
 describe('TransactionDetails.ui', () => {
   it('should render', () => {

@@ -4,8 +4,8 @@ import { Actions } from 'react-native-router-flux'
 import { connect } from 'react-redux'
 
 import * as actions from '../../actions/indexActions'
+import LinkedComponent from '../../components/scenes/EdgeLoginScene'
 import type { Dispatch, State } from '../../modules/ReduxTypes.js'
-import LinkedComponent from '../../modules/UI/scenes/EdgeLogin/EdgeLoginSceneComponent'
 import { EdgeLoginScreen } from '../../styles/indexStyles'
 
 export const mapStateToProps = (state: State) => ({

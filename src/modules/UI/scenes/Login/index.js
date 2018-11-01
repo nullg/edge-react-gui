@@ -1,5 +1,5 @@
 // @flow
 
-import Login from './Login.ui.js'
+import Login from '../../../../components/scenes/LoginScene.js'
 
 export default Login

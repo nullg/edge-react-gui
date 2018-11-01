@@ -3,6 +3,8 @@
 import type { EdgeCurrencyWallet } from 'edge-core-js'
 import { connect } from 'react-redux'
 
+import { Request } from '../../../../components/scenes/RequestScene'
+import type { RequestDispatchProps, RequestLoadingProps, RequestStateProps } from '../../../../components/scenes/RequestScene'
 import type { GuiCurrencyInfo, GuiDenomination, GuiWallet } from '../../../../types'
 import * as CORE_SELECTORS from '../../../Core/selectors.js'
 import type { Dispatch, State } from '../../../ReduxTypes'
@@ -10,8 +12,6 @@ import { getDenomFromIsoCode } from '../../../utils'
 import * as UI_SELECTORS from '../../selectors.js'
 import * as SETTINGS_SELECTORS from '../../Settings/selectors.js'
 import { refreshReceiveAddressRequest, selectWalletFromModal } from '../../Wallets/action'
-import { Request } from './Request.ui'
-import type { RequestDispatchProps, RequestLoadingProps, RequestStateProps } from './Request.ui'
 
 const mapStateToProps = (state: State): RequestStateProps | RequestLoadingProps => {
   const guiWallet: GuiWallet = UI_SELECTORS.getSelectedWallet(state)

@@ -1,9 +1,9 @@
 // @flow
 import { connect } from 'react-redux'
 
+import type { PassedProps } from '../../components/scenes/TransactionsExportScene.js'
+import { TransactionsExportSceneComponent } from '../../components/scenes/TransactionsExportScene.js'
 import type { Dispatch, State } from '../../modules/ReduxTypes'
-import type { PassedProps } from '../../modules/UI/scenes/TransactionsExport/TransactionsExportSceneComponent.js'
-import { TransactionsExportSceneComponent } from '../../modules/UI/scenes/TransactionsExport/TransactionsExportSceneComponent.js'
 import { getDisplayDenomination } from '../../modules/UI/Settings/selectors.js'
 
 const mapStateToProps = (state: State, ownProps: PassedProps) => {

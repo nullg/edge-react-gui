@@ -2,11 +2,11 @@
 
 import { connect } from 'react-redux'
 
+import Login from '../../../../components/scenes/LoginScene'
 import { addUsernames } from '../../../Core/Context/action'
 import * as CORE_SELECTORS from '../../../Core/selectors'
 import { initializeAccount } from '../../../Login/action'
 import type { Dispatch, State } from '../../../ReduxTypes'
-import Login from './Login.ui'
 
 const mapStateToProps = (state: State) => ({
   context: CORE_SELECTORS.getContext(state),

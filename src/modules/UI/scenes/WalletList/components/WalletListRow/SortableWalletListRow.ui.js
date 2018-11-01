@@ -8,10 +8,10 @@ import { connect } from 'react-redux'
 import sort from '../../../../../../assets/images/walletlist/sort.png'
 import { intl } from '../../../../../../locales/intl'
 import s from '../../../../../../locales/strings.js'
+import styles, { styles as styleRaw } from '../../../../../../styles/scenes/WalletListStyle.js'
 import { cutOffText, decimalOrZero, findDenominationSymbol, truncateDecimals } from '../../../../../utils'
 import T from '../../../../components/FormattedText'
 import * as SETTINGS_SELECTORS from '../../../../Settings/selectors'
-import styles, { styles as styleRaw } from '../../style.js'
 
 const DIVIDE_PRECISION = 18
 

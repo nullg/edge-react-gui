@@ -2,9 +2,9 @@
 import { connect } from 'react-redux'
 
 import { exchangeTimerExpired, shiftCryptoCurrency } from '../../actions/indexActions.js'
+import { CryptoExchangeQuoteScreenComponent } from '../../components/scenes/CryptoExchangeQuoteScene'
+import type { OwnProps } from '../../components/scenes/CryptoExchangeQuoteScene'
 import type { Dispatch, State } from '../../modules/ReduxTypes'
-import { CryptoExchangeQuoteScreenComponent } from '../../modules/UI/scenes/CryptoExchange/CryptoExchangeQuoteScreenComponent'
-import type { OwnProps } from '../../modules/UI/scenes/CryptoExchange/CryptoExchangeQuoteScreenComponent'
 
 /* import type { GuiWallet } from '../../types.js' */
 

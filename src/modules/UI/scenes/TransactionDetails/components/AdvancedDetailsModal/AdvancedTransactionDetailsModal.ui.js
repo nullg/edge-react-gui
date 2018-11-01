@@ -5,11 +5,11 @@ import { Alert, Clipboard, Linking, TouchableOpacity } from 'react-native'
 
 import * as Constants from '../../../../../../constants/indexConstants.js'
 import s from '../../../../../../locales/strings.js'
+import styles, { activeOpacity } from '../../../../../../styles/scenes/TransactionDetailsStyle.js'
 import { PrimaryButton } from '../../../../components/Buttons/PrimaryButton.ui.js'
 import Text from '../../../../components/FormattedText'
 import { Icon } from '../../../../components/Icon/Icon.ui.js'
 import { InteractiveModal } from '../../../../components/Modals/InteractiveModal/InteractiveModal.ui.js'
-import styles, { activeOpacity } from '../../style.js'
 
 export type AdvancedTransactionDetailsModalOwnProps = {
   isActive: boolean,

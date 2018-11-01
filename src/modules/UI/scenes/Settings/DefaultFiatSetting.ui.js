@@ -6,12 +6,12 @@ import { Alert, Keyboard, TouchableHighlight, View } from 'react-native'
 import { FormField } from '../../../../components/FormField.js'
 import s from '../../../../locales/strings.js'
 import { MaterialInputOnWhite } from '../../../../styles/components/FormFieldStyles.js'
+import styles, { styles as stylesRaw } from '../../../../styles/scenes/SettingsStyle.js'
 import type { DeviceDimensions, FlatListItem, GuiFiatType } from '../../../../types'
 import Text from '../../components/FormattedText'
 import Gradient from '../../components/Gradient/Gradient.ui'
 import SafeAreaView from '../../components/SafeAreaView'
 import SearchResults from '../../components/SearchResults'
-import styles, { styles as stylesRaw } from './style.js'
 
 const DEFAULT_FIAT_PICKER_PLACEHOLDER = s.strings.settings_select_currency
 const INVALID_DATA_TEXT = s.strings.fragment_create_wallet_select_valid

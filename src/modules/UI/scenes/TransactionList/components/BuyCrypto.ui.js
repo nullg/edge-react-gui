@@ -6,9 +6,9 @@ import { Actions } from 'react-native-router-flux'
 import { sprintf } from 'sprintf-js'
 
 import s from '../../../../../locales/strings.js'
+import style from '../../../../../styles/scenes/TransactionListStyle.js'
 import type { GuiWallet } from '../../../../../types'
 import T from '../../../components/FormattedText'
-import style from '../style.js'
 
 export type Props = {
   wallet: GuiWallet

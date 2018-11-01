@@ -4,7 +4,7 @@
 import React from 'react'
 import ShallowRenderer from 'react-test-renderer/shallow'
 
-import { style } from '../style.js'
+import { style } from '../../../../../styles/scenes/TransactionListStyle.js'
 import { TransactionRowComponent } from './TransactionRow.ui.js'
 
 describe('MenuDropDown component', () => {

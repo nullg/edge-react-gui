@@ -4,9 +4,9 @@ import React, { Component } from 'react'
 import { TouchableHighlight, View } from 'react-native'
 import slowlog from 'react-native-slowlog'
 
+import styles, { styles as styleRaw } from '../../../../../styles/scenes/SettingsStyle'
 import { border as b } from '../../../../utils'
 import T from '../../../components/FormattedText'
-import styles, { styles as styleRaw } from '../style'
 
 export type Props = {
   leftText: string,

@@ -12,10 +12,10 @@ import sentTypeImage from '../../../../../assets/images/transactions/transaction
 import { intl } from '../../../../../locales/intl'
 import s from '../../../../../locales/strings'
 import type { ContactsState } from '../../../../../reducers/contacts/contactsReducer'
+import styles, { styles as styleRaw } from '../../../../../styles/scenes/TransactionListStyle'
 import type { GuiWallet, TransactionListTx } from '../../../../../types'
 import * as UTILS from '../../../../utils'
 import T from '../../../components/FormattedText'
-import styles, { styles as styleRaw } from '../style'
 
 type TransactionRowOwnProps = {
   transactions: Array<TransactionListTx>,

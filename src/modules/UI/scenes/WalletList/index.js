@@ -1,5 +1,5 @@
 // @flow
 
-import WalletList from './WalletList.ui'
+import WalletList from '../../../../components/scenes/WalletListScene'
 
 export default WalletList

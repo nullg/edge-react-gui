@@ -3,13 +3,13 @@
 import type { EdgeAccount } from 'edge-core-js'
 import { connect } from 'react-redux'
 
+import SettingsOverview from '../../../../components/scenes/SettingsOverviewScene'
 import * as Constants from '../../../../constants/indexConstants'
 import type { Dispatch, State } from '../../../../modules/ReduxTypes'
 import * as CORE_SELECTORS from '../../../Core/selectors'
 import { resetSendLogsStatus, sendLogs } from '../../../Logs/action'
 import * as SETTINGS_SELECTORS from '../../Settings/selectors'
 import { checkCurrentPassword, lockSettings, restoreWallets, setAutoLogoutTimeInMinutesRequest, togglePinLoginEnabled, updateTouchIdEnabled } from './action'
-import SettingsOverview from './SettingsOverview.ui'
 
 // settings_button_lock_settings, or //settings_button_unlock_settings
 

@@ -3,8 +3,8 @@
 import React, { Component } from 'react'
 import { TouchableWithoutFeedback, View } from 'react-native'
 
+import style from '../../../../../styles/scenes/ChangeMiningFeeStyle'
 import T from '../../../components/FormattedText'
-import style from '../style'
 
 type RadioButtonOwnProps = {
   value: string,

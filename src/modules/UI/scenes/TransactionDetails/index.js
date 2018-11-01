@@ -1,5 +1,5 @@
 // @flow
 
-import { TransactionDetails } from './TransactionDetails.ui'
+import { TransactionDetails } from '../../../../components/scenes/TransactionDetailsScene'
 
 export default TransactionDetails

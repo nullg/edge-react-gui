@@ -2,6 +2,7 @@
 
 import { connect } from 'react-redux'
 
+import Scan from '../../../../components/scenes/ScanScene'
 import { getCameraPermission } from '../../../../reducers/permissions/selectors'
 import type { Dispatch, State } from '../../../ReduxTypes'
 import { selectWalletFromModal } from '../../Wallets/action.js'
@@ -14,7 +15,6 @@ import {
   toggleAddressModal,
   toggleEnableTorch
 } from './action'
-import Scan from './Scan.ui'
 
 const mapStateToProps = (state: State) => ({
   cameraPermission: getCameraPermission(state),

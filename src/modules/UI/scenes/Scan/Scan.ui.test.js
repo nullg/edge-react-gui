@@ -4,8 +4,8 @@
 import React from 'react'
 import ShallowRenderer from 'react-test-renderer/shallow'
 
+import { Scan } from '../../../../components/scenes/ScanScene.js'
 import { PermissionStatusStrings } from '../../../PermissionsManager.js'
-import { Scan } from './Scan.ui.js'
 
 describe('Scan component', () => {
   it('should render with DENIED props', () => {

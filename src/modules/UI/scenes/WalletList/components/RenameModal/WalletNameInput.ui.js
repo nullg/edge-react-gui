@@ -4,7 +4,7 @@ import React, { Component } from 'react'
 import { View } from 'react-native'
 
 import { FormField } from '../../../../../../components/FormField.js'
-import styles from '../../style'
+import styles from '../../../../../../styles/scenes/WalletListStyle'
 
 type Props = {
   currentWalletBeingRenamed: string,

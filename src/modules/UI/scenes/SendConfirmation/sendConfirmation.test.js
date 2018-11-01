@@ -4,7 +4,7 @@
 import React from 'react'
 import ShallowRenderer from 'react-test-renderer/shallow'
 
-import { SendConfirmation } from './SendConfirmation.ui.js'
+import { SendConfirmation } from '../../../../components/scenes/SendConfirmationScene.js'
 
 describe('SendConfirmation', () => {
   it('should render with standard props', () => {

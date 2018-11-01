@@ -5,8 +5,8 @@ import { connect } from 'react-redux'
 
 import * as CORE_SELECTORS from '../../../Core/selectors.js'
 import type { State } from '../../../ReduxTypes'
-import ChangePasswordComponent from './ChangePasswordComponent.ui'
-import type { ChangePasswordDispatchProps, ChangePasswordOwnProps, ChangePasswordStateProps } from './ChangePasswordComponent.ui'
+import ChangePasswordComponent from './ChangePasswordComponent'
+import type { ChangePasswordDispatchProps, ChangePasswordOwnProps, ChangePasswordStateProps } from './ChangePasswordComponent'
 
 export const mapStateToProps = (state: State, ownProps: ChangePasswordOwnProps): ChangePasswordStateProps => ({
   context: CORE_SELECTORS.getContext(state),

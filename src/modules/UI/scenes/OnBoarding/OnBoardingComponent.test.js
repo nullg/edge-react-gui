@@ -4,7 +4,7 @@
 import React from 'react'
 import ShallowRenderer from 'react-test-renderer/shallow'
 
-import { OnBoardingComponent } from './OnBoardingComponent.js'
+import { OnBoardingComponent } from '../../../../components/scenes/OnBoardingScene.js'
 
 describe('On-Boarding Component', () => {
   it('should render without props', () => {
